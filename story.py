@@ -70,8 +70,8 @@ story = {
     "workforce_military": {
         "text": "You got a job. You have no debts and you have military experience. A lot of companies want to hire you so you chose what made you happiest.",
         "choices": [
-            {"text": "Job hop to widen your experiences while adding to a 401k and retire", "next": "end"},
-            {"text": "Stay at a company you love, climb the ladder and retire happy.", "next": "end"}
+            {"text": "Job hop to widen your experiences while adding to a 401k and retire", "next": "retire"},
+            {"text": "Stay at a company you love, climb the ladder and retire happy.", "next": "retire"}
         ]
     },
 
@@ -81,8 +81,8 @@ story = {
     "workforce": {
         "text": "You got a job. You've avoided the debt trap. You don't make much money, yet.",
         "choices": [
-            {"text": "Job hop to widen your experiences, or until you find something you love, while adding to a 401k and retire", "next": "end"},
-            {"text": "Stay at a company you love, climb the ladder and retire happy.", "next": "end"},
+            {"text": "Job hop to widen your experiences, or until you find something you love, while adding to a 401k and retire", "next": "retire"},
+            {"text": "Stay at a company you love, climb the ladder and retire happy.", "next": "retire"},
             {"text": "Job hob until you find something you love. They offer big promotions if you go get a degree", "next": "workforce_college"}
         ]
     },
@@ -96,13 +96,13 @@ story = {
     "college_part_time": {
         "text": "You went to college part-time while you worked. It took a long time, but you got your degree.",
         "choices": [
-            {"text": "Your company gave you the promotion they promised you. You're able to buy a home and retire.", "next": "end"}
+            {"text": "Your company gave you the promotion they promised you. You're able to buy a home and retire.", "next": "retire"}
         ]
     },
     "college_full_time": {
         "text": "You went to college full-time while you worked. You sacrificed ALL of your social life, but you got your degree.",
         "choices": [
-            {"text": "Your company gave you the promotion they promised you. You're able to buy a home and retire.", "next": "end"}
+            {"text": "Your company gave you the promotion they promised you. You're able to buy a home and retire.", "next": "retire"}
         ]
     },
 
@@ -165,27 +165,21 @@ story = {
             {"text": "You're frustrated that you're not where you wanted to be. Give up.", "next": "homeless"},
         ]
     },
-    "retire": {
-        "text": "Congratulations! You've lived your best life. Now that you're retired you can do whatever you want.",
-        "choices": [
-            {"text": "Enjoy your retirement!", "next": "end"}
-        ]
-    },
-    "failure": {
-        "text": "You enjoyed life for a while. Until the IRS came knocking on your door. You ignored them, but they took everything you had. You're older now.",
-        "choices": [
-            {"text": "Take any job you can get. Since you've hit the bottom you've learned to love and appreciate your job and everything you have.", "next": "end"}
-        ]
-    },
-    "homeless": {
-        "text": "You gave up. You lost everything. You live on the streets now.",
-        "choices": [
-            {"text": "Take any job you can get. Since you've hit the bottom you've learned to love and appreciate your job and everything you have.", "next": "end"}
-        ]
-    },
 
 
     # endings
+    "retire": {
+        "text": "Congratulations! You've lived your best life. Now that you're retired you can do whatever you want.",
+        "choices": []
+    },
+    "failure": {
+        "text": "You enjoyed life for a while. Until the IRS came knocking on your door. You ignored them, but they took everything you had. You're older now. You take any job you can get. Since you've hit the bottom you've learned to love and appreciate your job and everything you have.",
+        "choices": []
+    },
+    "homeless": {
+        "text": "You gave up. You lost everything. You live on the streets now. Take any job you can get. Since you've hit the bottom you've learned to love and appreciate your job and everything you have.",
+        "choices": []
+    },
     "end": {
         "text": "The end.",
         "choices": []
